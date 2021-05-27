@@ -73,14 +73,14 @@ function WrNextion {
 #------------------------------------------------------------------------------
 
 $Vers="1.1"
-$port="COM8"    #Change to the ComPort used to deal with Nextion
+$ComPort="COM8"    #Change to the ComPort used to deal with Nextion
 
 [int] $VMax=10        # Initial value Max of counter, any positv value
 [int] $VCnt=0         # Initial counter value
 
 Write-Host "PcLink version $Vers port $Port"
 
-$port= new-Object System.IO.Ports.SerialPort $Port,9600,None,8,one
+$port= new-Object System.IO.Ports.SerialPort $ComPort,9600,None,8,one
 $port.open()
 
 do{
