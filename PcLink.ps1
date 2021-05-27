@@ -73,7 +73,7 @@ function WrNextion {
 #------------------------------------------------------------------------------
 
 $Vers="1.1"
-$Port="COM8"    #Change to the ComPort used to deal with Nextion
+$port="COM8"    #Change to the ComPort used to deal with Nextion
 
 [int] $VMax=10        # Initial value Max of counter, any positv value
 [int] $VCnt=0         # Initial counter value
